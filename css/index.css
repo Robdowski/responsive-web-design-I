@@ -61,18 +61,16 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-*{
-	box-sizing: border-box;
-}
-
 /* Styling the NavBar */ 
 
 nav{
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
+}
+
+nav div{
+    margin: 1vh 0;
 }
 
 nav .bar{
@@ -165,7 +163,8 @@ header .leftHead span:after{
 
 .content .below{
 	display:flex;
-	padding: 5vh 0;
+    padding: 5vh 0;
+    border-bottom: 1px solid black;
 
 }
 
@@ -174,7 +173,7 @@ header .leftHead span:after{
 footer{
 	margin-left: 10px;
 	margin-bottom: 50px;
-
+    margin-top: 20px;
 	
 }
 
@@ -188,3 +187,37 @@ footer .copyright{
 	text-align:center;
 }
 
+
+/**** Adding media queries ****/
+
+/**** TABLET ****/
+
+@media (max-width:800px){
+    body{
+        margin: 0 3%;
+    }
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav div{
+        display:flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    
+    nav div a{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+    }
+
+    .rightHead{
+        display:none;
+    }
+}
