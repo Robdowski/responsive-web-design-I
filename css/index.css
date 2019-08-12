@@ -221,3 +221,53 @@ footer .copyright{
         display:none;
     }
 }
+
+/**** ADDING PHONE QUERIES ****/
+
+@media (max-width:500px){
+    body{
+        margin: 0 3%;
+    }
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        border-top: 1px solid black;
+    }
+
+    
+    .navbar a{
+        width:100%;
+        border-bottom: 1px solid black;
+    }
+
+    .rightHead{
+        display:none;
+    }
+
+    .above{
+        flex-direction:column;
+        justify-content: space-between;
+    }
+
+    .above div{
+        margin: 2vh 0;
+    }
+
+    .below{
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    .below div{
+        margin:2vh 0;
+    }
+}
